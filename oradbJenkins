@@ -10,7 +10,7 @@ pipeline {
 		    stage ('Install Required RPM') {
             steps { 
                 echo 'Install Oracle Preinstallation RPM and the Oracle Database RPM packages'
-                sh script: "sudo su - root bash -c 'yum -y install oracle-database-preinstall-19c'"
+                sh script: "sudo su - root bash -c 'yum -y install oracle-database-preinstall-19c-1.0-1.el7.x86_64.rpm'"
             }
         }
            stage ('Install Database Software') {
